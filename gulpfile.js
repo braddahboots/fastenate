@@ -16,8 +16,11 @@ gulp.task('watch-files', function (){
 
 gulp.task('compile-sass', function (){
   return gulp
-          .src(PathTo.SassFiles, ['compile-sass'])
-          .pipe(sass({ errLogToConsole: true }))
+          .src(PathTo.SassFiles)
+          .pipe(sass({
+            sourceComments: true,
+            includePaths: ['bower_components/foundation/scss']
+          }).on('error', sass.logError))
           .pipe(gulp.dest(PathTo.PublicCss));
 });
 

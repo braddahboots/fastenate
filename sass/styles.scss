@@ -1,5 +1,41 @@
+@import 'partials/settings';
+@import 'foundation/components/top-bar';
+@import 'foundation/components/type';
+@import 'foundation/components/grid';
+@import 'foundation/components/visibility';
+@import 'foundation/components/buttons';
+
+@import url(https://fonts.googleapis.com/css?family=Oswald|Lato);
+
 body {
+  background-image: url('../assets/bg.jpg');
+}
+
+header.logo {
+  background-image: url('../assets/logo.svg');
+  background-size: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #FFF;
+  height: 60px;
+
   h1 {
-    background-color: #fff;
+  background-image: url('../assets/header_bg.svg');
+  background-size: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 60px;
+  margin-top: 0px;
+
+  span {
+    visibility: hidden;
+  }
   }
 }
+
+footer {
+  bottom: 0;
+  background-color: black;
+  height: 60px;
+}
+
