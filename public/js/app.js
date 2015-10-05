@@ -3,7 +3,7 @@
 (function() {
 
   //set html pointer to a variable
-  var post = $('post');
+  var grid = $('grid');
 
 
   //create a module that will set the framework for foundation
@@ -29,7 +29,7 @@
     };
   });
 
-  //pulls from api and appends to post
+  //pulls from api and appends to grid
   var content = (function(data) {
     for(var i = 0; i < data.data.children.length; i++) {
       var reddit = data.data.children[i];
@@ -38,19 +38,31 @@
       }
         modules.row.append(modules.col());
 
+      var post = '<div class="post"></<div>';
+      modules.col.append(post);
+
       //pull image from json file
       var url = '<div><img src="' + reddit.data.url + '"></div>';
+      post.append(url);
 
       //pull title from json file
       var title = $('<h1>',{class: 'title', html: reddit.data.title});
+      post.append(title);
+
+      var infoSection = '<div class="infoSection"></div>';
+      post.append(infoSection);
 
       //pull the author from json file
       var author = $('<h4>', {class: 'author', html: 'by ' + reddit.data.author});
+      infoSection.append(author);
 
       //pull the total amount of up votes from json file
       var votes = $('<div>', {class: 'votes', html: reddit.data.ups + ' Up-Votes!'});
+      infoSection.append(votes);
 
+      //filler text placement for each individual grid
       var filler = $('<p>', {class: 'filler', html: 'I Like Turtles...and Cake'});
+      post.append(filler);
 
     }
 
@@ -68,8 +80,8 @@
       //   });
 
       //   var picture = '<div><img src="' + titles.data.url + '"></div>';
-        $('.panel').append(post, picture);
-      }
+      // $('.panel').append(post, picture);
+      content(data);
     },
     error: function(err) {
       console.log(err);
