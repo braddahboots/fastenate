@@ -3675,7 +3675,7 @@ header.logo {
   background-image: url("../assets/logo.svg");
   background-size: center;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-color: #FFF;
   height: 60px; }
   /* line 31, stdin */
@@ -3743,13 +3743,17 @@ header.logo {
     margin-left: 5px;
     margin-right: 5px; }
 
-/* line 104, stdin */
+/* line 105, stdin */
 .panel {
-  border: 5px solid black;
-  height: 250px;
-  width: 75%;
-  border-box: inline; }
+  border: 5px solid #FFF;
+  margin: 15px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center; }
+  /* line 111, stdin */
+  .panel:hover {
+    background-color: #F1592A; }
 
-/* line 112, stdin */
+/* line 116, stdin */
 img.insta:hover {
   background: url("../assets/instagram_orange.svg"); }

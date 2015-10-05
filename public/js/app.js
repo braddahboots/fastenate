@@ -30,24 +30,45 @@
   });
 
   //pulls from api and appends to post
-  var content = (function() {
+  var content = (function(data) {
+    for(var i = 0; i < data.data.children.length; i++) {
+      var reddit = data.data.children[i];
+      if(i % 2 === 0) {
+        modules.row();
+      }
+        modules.row.append(modules.col());
+
+      //pull image from json file
+      var url = '<div><img src="' + reddit.data.url + '"></div>';
+
+      //pull title from json file
+      var title = $('<h1>',{class: 'title', html: reddit.data.title});
+
+      //pull the author from json file
+      var author = $('<h4>', {class: 'author', html: 'by ' + reddit.data.author});
+
+      //pull the total amount of up votes from json file
+      var votes = $('<div>', {class: 'votes', html: reddit.data.ups + ' Up-Votes!'});
+
+      var filler = $('<p>', {class: 'filler', html: 'I Like Turtles...and Cake'});
+
+    }
 
   });
-
 
   $.ajax({
     url : '/api/my_boards.json',
     method : 'GET',
     success: function(data) {
-      for(var i = 0; i < data.data.children.length; i++) {
-        var titles = data.data.children[i];
-        var post = $('<li>', {
-          class: 'title',
-          html: titles.data.title
-        });
+      // for(var i = 0; i < data.data.children.length; i++) {
+      //   var titles = data.data.children[i];
+      //   var post = $('<li>', {
+      //     class: 'title',
+      //     html: titles.data.title
+      //   });
 
-        var picture = '<div><img src="' + titles.data.url + '"></div>';
-        // $('.box').append(post, picture);
+      //   var picture = '<div><img src="' + titles.data.url + '"></div>';
+        $('.panel').append(post, picture);
       }
     },
     error: function(err) {

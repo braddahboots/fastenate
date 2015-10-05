@@ -24,7 +24,7 @@ header.logo {
   background-image: url('../assets/logo.svg');
   background-size: center;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-color: #FFF;
   height: 60px;
 
@@ -101,12 +101,16 @@ header.logo {
   }
 }
 
-.panel {
-  border: 5px solid black;
-  height: 250px;
-  width: 75%;
-  border-box: inline;
 
+.panel {
+  border: 5px solid #FFF;
+  margin: 15px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  &:hover {
+    background-color: $highlight;
+  }
 }
 
 img.insta:hover {
