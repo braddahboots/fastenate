@@ -12,6 +12,12 @@ var PathTo = {
 gulp.task('watch-files', function (){
   gulp.watch(PathTo.SassFiles, ['compile-sass']);
   gulp.watch(PathTo.PublicCssFiles, ['html']);
+  gulp.watch(PathTo.PublicFolder+'/**/*', ['livereload']);
+});
+
+gulp.task('livereload', function (){
+  gulp.src('./public/**/*')
+  .pipe(connect.reload());
 });
 
 gulp.task('compile-sass', function (){

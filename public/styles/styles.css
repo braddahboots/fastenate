@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Oswald|Lato);
 /* line 364, bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
@@ -2009,7 +2010,7 @@ meta.foundation-mq-topbar {
 /* line 119, bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .contain-to-grid {
   width: 100%;
-  background: #333333; }
+  background: #3A3A3C; }
   /* line 123, bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
@@ -2039,7 +2040,7 @@ meta.foundation-mq-topbar {
 
 /* line 156, bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar {
-  background: #333333;
+  background: #3A3A3C;
   height: 2.8125rem;
   line-height: 2.8125rem;
   margin-bottom: 0;
@@ -2091,7 +2092,7 @@ meta.foundation-mq-topbar {
       margin: 0; }
       /* line 219, bower_components/foundation/scss/foundation/components/_top-bar.scss */
       .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
-        color: #FFFFFF;
+        color: #818285;
         display: block;
         font-weight: normal;
         padding: 0 0.9375rem;
@@ -2103,7 +2104,7 @@ meta.foundation-mq-topbar {
     top: 0; }
     /* line 235, bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar .toggle-topbar a {
-      color: #FFFFFF;
+      color: #818285;
       display: block;
       font-size: 0.8125rem;
       font-weight: bold;
@@ -2143,7 +2144,7 @@ meta.foundation-mq-topbar {
     height: auto; }
     /* line 272, bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar.expanded .title-area {
-      background: #333333; }
+      background: #3A3A3C; }
     /* line 277, bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
@@ -2176,7 +2177,7 @@ meta.foundation-mq-topbar {
   /* line 324, bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
-    border-top: solid 1px #1a1a1a;
+    border-top: solid 1px #1d1d1e;
     clear: both;
     height: 1px;
     width: 100%; }
@@ -2185,7 +2186,7 @@ meta.foundation-mq-topbar {
     background: #333333; }
     /* line 334, bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section ul li > a {
-      color: #FFFFFF;
+      color: #818285;
       display: block;
       font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
@@ -2359,7 +2360,7 @@ meta.foundation-mq-topbar {
     /* line 373, bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section ul li:hover:not(.has-form) > a {
       background-color: #555555;
-      color: #FFFFFF;
+      color: #F1592A;
       background: #222222; }
     /* line 383, bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section ul li.active > a {
@@ -2438,7 +2439,7 @@ meta.foundation-mq-topbar {
         /* line 458, bower_components/foundation/scss/foundation/components/_top-bar.scss */
         .top-bar-section .dropdown li.title h5 a,
         .top-bar-section .dropdown li.parent-link a {
-          color: #FFFFFF;
+          color: #818285;
           display: block; }
           /* line 462, bower_components/foundation/scss/foundation/components/_top-bar.scss */
           .top-bar-section .dropdown li.title h5 a:hover,
@@ -2467,7 +2468,7 @@ meta.foundation-mq-topbar {
 @media only screen and (min-width: 40.0625em) {
   /* line 492, bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar {
-    background: #333333;
+    background: #3A3A3C;
     overflow: visible; }
     /* line 172, bower_components/foundation/scss/foundation/components/_global.scss */
     .top-bar:before, .top-bar:after {
@@ -2501,7 +2502,7 @@ meta.foundation-mq-topbar {
       top: 0.53125rem; }
     /* line 517, bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar.expanded {
-      background: #333333; }
+      background: #3A3A3C; }
   /* line 522, bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
     margin-bottom: 0;
@@ -2526,10 +2527,10 @@ meta.foundation-mq-topbar {
     .top-bar-section li.hover > a:not(.button) {
       background-color: #555555;
       background: #222222;
-      color: #FFFFFF; }
+      color: #F1592A; }
     /* line 555, bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section li:not(.has-form) a:not(.button) {
-      background: #333333;
+      background: #3A3A3C;
       line-height: 2.8125rem;
       padding: 0 0.9375rem; }
       /* line 559, bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -2615,7 +2616,7 @@ meta.foundation-mq-topbar {
       /* line 646, bower_components/foundation/scss/foundation/components/_top-bar.scss */
       .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         background-color: #555555;
-        color: #FFFFFF;
+        color: #F1592A;
         background: #222222; }
       /* line 655, bower_components/foundation/scss/foundation/components/_top-bar.scss */
       .top-bar-section .dropdown li label {
@@ -2628,7 +2629,7 @@ meta.foundation-mq-topbar {
     /* line 669, bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section > ul > .divider,
     .top-bar-section > ul > [role="separator"] {
-      border-right: solid 1px #4e4e4e;
+      border-right: solid 1px #535356;
       border-bottom: none;
       border-top: none;
       clear: none;
@@ -2636,7 +2637,7 @@ meta.foundation-mq-topbar {
       width: 0; }
     /* line 678, bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section .has-form {
-      background: #333333;
+      background: #3A3A3C;
       height: 2.8125rem;
       padding: 0 0.9375rem; }
     /* line 685, bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -2657,7 +2658,7 @@ meta.foundation-mq-topbar {
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
     background: #222222;
-    color: #FFFFFF; }
+    color: #F1592A; }
   /* line 716, bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:active > a {
     background: #008CBA;
@@ -2864,13 +2865,13 @@ td {
 /* Default Link Styles */
 /* line 217, bower_components/foundation/scss/foundation/components/_type.scss */
 a {
-  color: #008CBA;
+  color: #818285;
   line-height: inherit;
   text-decoration: none; }
   /* line 223, bower_components/foundation/scss/foundation/components/_type.scss */
   a:hover,
   a:focus {
-    color: #0078a0; }
+    color: #6f7072; }
   /* line 230, bower_components/foundation/scss/foundation/components/_type.scss */
   a img {
     border: none; }
@@ -3664,11 +3665,12 @@ th.hide-for-touch {
   .show-for-print {
     display: none !important; } }
 
-/* line 10, stdin */
-body {
-  background-image: url("../assets/bg.jpg"); }
+/* line 17, stdin */
+html, body {
+  background-image: url("../assets/bg.jpg");
+  height: 100%; }
 
-/* line 14, stdin */
+/* line 23, stdin */
 header.logo {
   background-image: url("../assets/logo.svg");
   background-size: center;
@@ -3676,7 +3678,7 @@ header.logo {
   background-position: center center;
   background-color: #FFF;
   height: 60px; }
-  /* line 22, stdin */
+  /* line 31, stdin */
   header.logo h1 {
     background-image: url("../assets/header_bg.svg");
     background-size: center;
@@ -3684,12 +3686,63 @@ header.logo {
     background-position: center center;
     height: 60px;
     margin-top: 0px; }
-    /* line 30, stdin */
+    /* line 39, stdin */
     header.logo h1 span {
       visibility: hidden; }
 
-/* line 36, stdin */
-footer {
-  bottom: 0;
-  background-color: black;
-  height: 60px; }
+/* line 46, stdin */
+.navbar {
+  background-color: #3A3A3C;
+  color: #818285;
+  text-align: center;
+  display: block; }
+  /* line 52, stdin */
+  .navbar a {
+    display: inline; }
+    /* line 54, stdin */
+    .navbar a:nth-child(n+2):before {
+      color: #818285;
+      content: ' • '; }
+    /* line 58, stdin */
+    .navbar a:hover {
+      color: #F1592A; }
+
+/* line 65, stdin */
+.box {
+  margin: auto;
+  background-color: #FFF;
+  height: 20px;
+  width: 100%; }
+
+/* line 74, stdin */
+.container {
+  min-height: 100%;
+  /* equal to footer height */
+  margin : 0px;
+  margin-bottom: -50px; }
+
+/* line 81, stdin */
+.container:after {
+  content: "";
+  display: block;
+  margin: 0px; }
+
+/* line 87, stdin */
+.site-footer, .container:after {
+  height: 50px;
+  margin: 0px; }
+
+/* line 92, stdin */
+.site-footer {
+  height: 50px;
+  background: #3A3A3C;
+  background-position: center;
+  text-align: center; }
+  /* line 98, stdin */
+  .site-footer img {
+    margin-left: 5px;
+    margin-right: 5px; }
+
+/* line 104, stdin */
+img.insta:hover {
+  background: url("../assets/instagram_orange.svg"); }

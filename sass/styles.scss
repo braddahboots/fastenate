@@ -7,10 +7,19 @@
 
 @import url(https://fonts.googleapis.com/css?family=Oswald|Lato);
 
-body {
+// $bright: #FFF; //white
+// $highlight: #F1592A; //bright red
+// $dark: #3A3A3C; //VERY dark grayish blue
+// $lightDark: #818285; //dark grayish blue
+$footerHeight: 50px;
+
+//Background Image
+html, body {
   background-image: url('../assets/bg.jpg');
+  height: 100%;
 }
 
+//Logo Image
 header.logo {
   background-image: url('../assets/logo.svg');
   background-size: center;
@@ -33,9 +42,65 @@ header.logo {
   }
 }
 
-footer {
-  bottom: 0;
-  background-color: black;
-  height: 60px;
+// Nav Bar
+.navbar {
+  background-color: $dark;
+  color: $lightDark;
+  text-align: center;
+  display: block;
+
+  a {
+    display: inline;
+    &:nth-child(n+2):before {
+      color: $lightDark;
+      content: ' • ';
+      }
+    &:hover {
+    color: $highlight;
+    }
+  }
 }
 
+//Content Modules
+.box {
+  margin: auto;
+  background-color: $bright;
+  // border: 5px solid $bright;
+  height: 20px;
+  width: 100%;
+}
+
+//setting containter hack for footer
+.container {
+  min-height: 100%;
+  /* equal to footer height */
+  margin : 0px;
+  margin-bottom: -$footerHeight;
+}
+
+.container:after {
+  content: "";
+  display: block;
+  margin: 0px;
+}
+
+.site-footer, .container:after {
+  height: $footerHeight;
+  margin: 0px;
+}
+
+.site-footer {
+  height: $footerHeight;
+  background: $dark;
+  background-position: center;
+  text-align: center;
+
+  img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+img.insta:hover {
+  background: url('../assets/instagram_orange.svg');
+}
