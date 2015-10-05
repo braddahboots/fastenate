@@ -35,9 +35,6 @@
   });
 
 
-
-
-
   $.ajax({
     url : '/api/my_boards.json',
     method : 'GET',
@@ -50,7 +47,7 @@
         });
 
         var picture = '<div><img src="' + titles.data.url + '"></div>';
-        $('.box').append(post, picture);
+        // $('.box').append(post, picture);
       }
     },
     error: function(err) {

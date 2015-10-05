@@ -3744,5 +3744,12 @@ header.logo {
     margin-right: 5px; }
 
 /* line 104, stdin */
+.panel {
+  border: 5px solid black;
+  height: 250px;
+  width: 75%;
+  border-box: inline; }
+
+/* line 112, stdin */
 img.insta:hover {
   background: url("../assets/instagram_orange.svg"); }

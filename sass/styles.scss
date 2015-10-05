@@ -101,6 +101,14 @@ header.logo {
   }
 }
 
+.panel {
+  border: 5px solid black;
+  height: 250px;
+  width: 75%;
+  border-box: inline;
+
+}
+
 img.insta:hover {
   background: url('../assets/instagram_orange.svg');
 }
