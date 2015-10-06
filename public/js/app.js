@@ -3,57 +3,60 @@
 (function() {
 
   //set html pointer to a variable
-  var grid = $('grid');
-
+  var grid = $('.grid');
+  var row;
+  var col;
 
   //create a module that will set the framework for foundation
-  var modules = (function() {
+  // var modules = (function() {
 
-    //creates the rows
-    function _row() {
-      return $('<div>', {
-        class: 'row'
-      });
-    }
+  //   //creates the rows
+  //   function _row() {
+  //     return $('<div>', {
+  //       class: 'row'
+  //     });
+  //   }
 
-    //creates the columns
-    function _col() {
-      return $('<div>', {
-        class: 'large-6 medium-6 small-12 columns'
-      });
-    }
+  //   //creates the columns
+  //   function _col() {
+  //     return $('<div>', {
+  //       class: 'large-6 medium-6 small-12 columns'
+  //     });
+  //   }
 
-    return {
-      row: _row,
-      col: _col
-    };
-  });
+  //   return {
+  //     row: _row(),
+  //     col: _col()
+  //   };
+  // })();
 
   //pulls from api and appends to grid
-  var content = (function(data) {
+  function content (data) {
     for(var i = 0; i < data.data.children.length; i++) {
       var reddit = data.data.children[i];
-      if(i % 2 === 0) {
-        modules.row();
+        if(i % 2 === 0) {
+          row = $('<div>', {class: 'row'}); //grid.append(modules.row);
+          grid.append(row);
       }
-        modules.row.append(modules.col());
+      col = $('<div>', {class: 'large-6 medium-6 small-12 columns'}); //row.append(modules.col);
+      row.append(col);
 
-      var post = '<div class="post"></<div>';
-      modules.col.append(post);
+      var post = $('<div>', {class: "post"});
+      col.append(post);
 
       //pull image from json file
-      var url = '<div><img src="' + reddit.data.url + '"></div>';
+      var url = $('<img>', {src: reddit.data.url, class: 'picture'});
       post.append(url);
 
       //pull title from json file
       var title = $('<h1>',{class: 'title', html: reddit.data.title});
       post.append(title);
 
-      var infoSection = '<div class="infoSection"></div>';
+      var infoSection = $('<div>', {class: "infoSection"});
       post.append(infoSection);
 
       //pull the author from json file
-      var author = $('<h4>', {class: 'author', html: 'by ' + reddit.data.author});
+      var author = $('<h5>', {class: 'author', html: 'by ' + reddit.data.author});
       infoSection.append(author);
 
       //pull the total amount of up votes from json file
@@ -66,7 +69,7 @@
 
     }
 
-  });
+  }
 
   $.ajax({
     url : '/api/my_boards.json',

@@ -3665,12 +3665,12 @@ th.hide-for-touch {
   .show-for-print {
     display: none !important; } }
 
-/* line 17, stdin */
+/* line 19, stdin */
 html, body {
   background-image: url("../assets/bg.jpg");
   height: 100%; }
 
-/* line 23, stdin */
+/* line 25, stdin */
 header.logo {
   background-image: url("../assets/logo.svg");
   background-size: center;
@@ -3678,7 +3678,7 @@ header.logo {
   background-position: center;
   background-color: #FFF;
   height: 60px; }
-  /* line 31, stdin */
+  /* line 33, stdin */
   header.logo h1 {
     background-image: url("../assets/header_bg.svg");
     background-size: center;
@@ -3686,74 +3686,89 @@ header.logo {
     background-position: center center;
     height: 60px;
     margin-top: 0px; }
-    /* line 39, stdin */
+    /* line 41, stdin */
     header.logo h1 span {
       visibility: hidden; }
 
-/* line 46, stdin */
+/* line 48, stdin */
 .navbar {
   background-color: #3A3A3C;
   color: #818285;
   text-align: center;
   display: block; }
-  /* line 52, stdin */
+  /* line 54, stdin */
   .navbar a {
     display: inline; }
-    /* line 54, stdin */
+    /* line 56, stdin */
     .navbar a:nth-child(n+2):before {
       color: #818285;
       content: ' • '; }
-    /* line 58, stdin */
+    /* line 60, stdin */
     .navbar a:hover {
       color: #F1592A; }
 
-/* line 65, stdin */
+/* line 67, stdin */
 .box {
   margin: auto;
   background-color: #FFF;
   height: 20px;
   width: 100%; }
 
-/* line 74, stdin */
+/* line 76, stdin */
 .container {
   min-height: 100%;
   /* equal to footer height */
   margin : 0px;
   margin-bottom: -50px; }
 
-/* line 81, stdin */
+/* line 83, stdin */
 .container:after {
   content: "";
   display: block;
   margin: 0px; }
 
-/* line 87, stdin */
+/* line 89, stdin */
 .site-footer, .container:after {
   height: 50px;
   margin: 0px; }
 
-/* line 92, stdin */
+/* line 94, stdin */
 .site-footer {
   height: 50px;
   background: #3A3A3C;
   background-position: center;
   text-align: center; }
-  /* line 98, stdin */
+  /* line 100, stdin */
   .site-footer img {
     margin-left: 5px;
     margin-right: 5px; }
 
-/* line 105, stdin */
-.panel {
+/* line 107, stdin */
+.post {
   border: 5px solid #FFF;
   margin: 15px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center; }
-  /* line 111, stdin */
-  .panel:hover {
+  padding: 10px;
+  text-align: center;
+  background-color: #FFFFFF; }
+  /* line 113, stdin */
+  .post:hover {
     background-color: #F1592A; }
 
-/* line 116, stdin */
+/* line 119, stdin */
+.picture {
+  height: 300px;
+  width: 300px; }
+
+/* line 125, stdin */
+.title {
+  font-family: Oswald;
+  font-size: 20px; }
+
+/* line 132, stdin */
+.infoSection {
+  font-family: Lato;
+  font-size: 15px; }
+
+/* line 138, stdin */
 img.insta:hover {
   background: url("../assets/instagram_orange.svg"); }
